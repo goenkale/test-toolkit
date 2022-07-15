@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_m4hl8ARHEe2svN_W1YdVJA" name="Dinosaur" author="bonitasoft" bonitaVersion="7.14.0" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_m4hl8QRHEe2svN_W1YdVJA" name="Dinosaur">
+    <elements xmi:type="process:Pool" xmi:id="_m4hl8QRHEe2svN_W1YdVJA" name="Create-Dinosaur">
       <elements xmi:type="process:Lane" xmi:id="_m4hl8gRHEe2svN_W1YdVJA" name="Employé (lane)" actor="_m4hmCwRHEe2svN_W1YdVJA">
         <elements xmi:type="process:StartEvent" xmi:id="_m4hl8wRHEe2svN_W1YdVJA" name="Démarrer1" outgoing="_m4hmCARHEe2svN_W1YdVJA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_m4hl9ARHEe2svN_W1YdVJA" name="" content="" returnTypeFixed="true"/>
@@ -13,8 +13,8 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_m4hl-QRHEe2svN_W1YdVJA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_m4hl-gRHEe2svN_W1YdVJA" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="_Giby9wRIEe2svN_W1YdVJA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_Giby-ARIEe2svN_W1YdVJA" name="dinosaur" content="dinosaur" type="TYPE_VARIABLE" returnType="com.company.model.Dinosaur">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Giby-QRIEe2svN_W1YdVJA" name="dinosaur" dataType="_m4hmJARHEe2svN_W1YdVJA" className="com.company.model.Dinosaur"/>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Giby-ARIEe2svN_W1YdVJA" name="dinosaur" content="dinosaur" type="TYPE_VARIABLE" returnType="com.company.bonitasoft.model.Dinosaur">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Giby-QRIEe2svN_W1YdVJA" name="dinosaur" dataType="_m4hmJARHEe2svN_W1YdVJA" className="com.company.bonitasoft.model.Dinosaur"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_Giby-gRIEe2svN_W1YdVJA" name="dinosaurInput.name" content="dinosaurInput?.name" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_Giby-wRIEe2svN_W1YdVJA" name="dinosaurInput" type="COMPLEX"/>
@@ -24,8 +24,8 @@
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_Giby_QRIEe2svN_W1YdVJA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_Giby_gRIEe2svN_W1YdVJA" name="dinosaur" content="dinosaur" type="TYPE_VARIABLE" returnType="com.company.model.Dinosaur">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Giby_wRIEe2svN_W1YdVJA" name="dinosaur" dataType="_m4hmJARHEe2svN_W1YdVJA" className="com.company.model.Dinosaur"/>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Giby_gRIEe2svN_W1YdVJA" name="dinosaur" content="dinosaur" type="TYPE_VARIABLE" returnType="com.company.bonitasoft.model.Dinosaur">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Giby_wRIEe2svN_W1YdVJA" name="dinosaur" dataType="_m4hmJARHEe2svN_W1YdVJA" className="com.company.bonitasoft.model.Dinosaur"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_GibzAARIEe2svN_W1YdVJA" name="dinosaurInput.color" content="dinosaurInput?.color" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_GibzAQRIEe2svN_W1YdVJA" name="dinosaurInput" type="COMPLEX"/>
@@ -35,8 +35,8 @@
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_GibzAwRIEe2svN_W1YdVJA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_GibzBARIEe2svN_W1YdVJA" name="dinosaur" content="dinosaur" type="TYPE_VARIABLE" returnType="com.company.model.Dinosaur">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_GibzBQRIEe2svN_W1YdVJA" name="dinosaur" dataType="_m4hmJARHEe2svN_W1YdVJA" className="com.company.model.Dinosaur"/>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_GibzBARIEe2svN_W1YdVJA" name="dinosaur" content="dinosaur" type="TYPE_VARIABLE" returnType="com.company.bonitasoft.model.Dinosaur">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_GibzBQRIEe2svN_W1YdVJA" name="dinosaur" dataType="_m4hmJARHEe2svN_W1YdVJA" className="com.company.bonitasoft.model.Dinosaur"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_GibzBgRIEe2svN_W1YdVJA" name="dinosaurInput.hungry" content="dinosaurInput?.hungry" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
               <referencedElements xmi:type="process:ContractInput" xmi:id="_GibzBwRIEe2svN_W1YdVJA" name="dinosaurInput" type="COMPLEX"/>
@@ -51,7 +51,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_m4hl_gRHEe2svN_W1YdVJA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_m4hl_wRHEe2svN_W1YdVJA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_m4hmAARHEe2svN_W1YdVJA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_m4hmAQRHEe2svN_W1YdVJA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_2kzNYAROEe2svN_W1YdVJA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_m4hmAgRHEe2svN_W1YdVJA">
             <inputs xmi:type="process:ContractInput" xmi:id="_Giby8ARIEe2svN_W1YdVJA" name="dinosaurInput" type="COMPLEX" dataReference="dinosaur">
@@ -107,11 +107,11 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_rO2F8wRHEe2svN_W1YdVJA" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_DyurcARIEe2svN_W1YdVJA" name="dinosaur" dataType="_m4hmJARHEe2svN_W1YdVJA" className="com.company.model.Dinosaur">
+      <data xmi:type="process:BusinessObjectData" xmi:id="_DyurcARIEe2svN_W1YdVJA" name="dinosaur" dataType="_m4hmJARHEe2svN_W1YdVJA" className="com.company.bonitasoft.model.Dinosaur">
         <defaultValue xmi:type="expression:Expression" xmi:id="_DyurcQRIEe2svN_W1YdVJA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_m4hmBARHEe2svN_W1YdVJA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_m4hmBQRHEe2svN_W1YdVJA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_2kzNYQROEe2svN_W1YdVJA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_m4hmBgRHEe2svN_W1YdVJA">
         <targetForm xmi:type="expression:Expression" xmi:id="_m4hmBwRHEe2svN_W1YdVJA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -135,7 +135,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_sft38ARHEe2svN_W1YdVJA" name="yes" target="_sfoYYARHEe2svN_W1YdVJA" source="_thlkoARHEe2svN_W1YdVJA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_sfufAARHEe2svN_W1YdVJA"/>
         <condition xmi:type="expression:Expression" xmi:id="_sfufAQRHEe2svN_W1YdVJA" name="isHungry" content="dinosaur.hungry" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_KCI0AARIEe2svN_W1YdVJA" name="dinosaur" dataType="_m4hmJARHEe2svN_W1YdVJA" className="com.company.model.Dinosaur"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9NdjcAROEe2svN_W1YdVJA" name="dinosaur" dataType="_m4hmJARHEe2svN_W1YdVJA" className="com.company.bonitasoft.model.Dinosaur"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_sxmSIARHEe2svN_W1YdVJA" target="_sxiAsARHEe2svN_W1YdVJA" source="_sfoYYARHEe2svN_W1YdVJA">
